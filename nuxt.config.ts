@@ -15,17 +15,17 @@ const prodScripts = [
     gtag('config', 'UA-62287374-3');
     `,
   },
-  {
-    innerHTML: `
-     var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?0509dafa02041a5f317e72172d0d10bf";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-     `,
-  },
+  // {
+  //   innerHTML: `
+  //    var _hmt = _hmt || [];
+  //   (function() {
+  //     var hm = document.createElement("script");
+  //     hm.src = "https://hm.baidu.com/hm.js?0509dafa02041a5f317e72172d0d10bf";
+  //     var s = document.getElementsByTagName("script")[0];
+  //     s.parentNode.insertBefore(hm, s);
+  //   })();
+  //    `,
+  // },
 ];
 const script = process.env.NODE_ENV === "production" ? prodScripts : [];
 
